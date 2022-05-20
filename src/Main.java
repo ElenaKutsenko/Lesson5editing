@@ -2,38 +2,43 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 
-class massive  {
-    public static void main(String args[ ]) {
+class massive {
+    public static void main(String args[]) {
 
-        float [] arr = generateRandomArray();
+        float[] arr = generateRandomArray();
     }
+
     public static float @NotNull [] generateRandomArray() {
         java.util.Random random = new java.util.Random();
-        float [] arr = new float [30];
-        for (float i = 0; i < arr.length; i++)  {
-            arr[(int) i] = random.nextInt(100_000) + 100_000;{
-                System.out.println(arr[(int)i]);}}
+        float[] arr = new float[30];
+        for (float i = 0; i < arr.length; i++) {
+            arr[(int) i] = random.nextInt(100_000) + 100_000;
+            {
+                System.out.println(arr[(int) i]);
+            }
+        }
         int sum = 0;
-        for (float  element: arr) {
-            sum += element;}
+        for (float element : arr) {
+            sum += element;
+        }
         {
-            System.out.println("Ñóììà òðàò ñîñòàâèëà "+sum+" ðóáëåé");}
+            System.out.println("Ð¡ÑƒÐ¼Ð¼Ð° Ñ‚Ñ€Ð°Ñ‚ ÑÐ¾ÑÑ‚Ð°Ð²Ð¸Ð»Ð° " + sum + " Ñ€ÑƒÐ±Ð»ÐµÐ¹");
+        }
 
 
         Arrays.sort(arr);
-        System.out.println("Ìèíèìàëüíàÿ ñóììà òðàò çà äåíü ñîñòàâèëà "+arr[0]+" ðóáëåé" );
-        System.out.println("Ìàêñèìàëüíàÿ ñóììà òðàò çà äåíü ñîñòàâèëà "+arr[29]+" ðóáëåé" );
-        float middle = sum/30f;
-        System.out.println("Ñðåäíÿÿ ñóììà òðàò çà ìåñÿö ñîñòàâèëà "+middle+" ðóáëåé" );
+        System.out.println("ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ ÑÑƒÐ¼Ð¼Ð° Ñ‚Ñ€Ð°Ñ‚ Ð·Ð° Ð´ÐµÐ½ÑŒ ÑÐ¾ÑÑ‚Ð°Ð²Ð¸Ð»Ð° " + arr[0] + " Ñ€ÑƒÐ±Ð»ÐµÐ¹");
+        System.out.println("ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ ÑÑƒÐ¼Ð¼Ð° Ñ‚Ñ€Ð°Ñ‚ Ð·Ð° Ð´ÐµÐ½ÑŒ ÑÐ¾ÑÑ‚Ð°Ð²Ð¸Ð»Ð° " + arr[29] + " Ñ€ÑƒÐ±Ð»ÐµÐ¹");
+        float middle = sum / 30f;
+        System.out.println("Ð¡Ñ€ÐµÐ´Ð½ÑÑ ÑÑƒÐ¼Ð¼Ð° Ñ‚Ñ€Ð°Ñ‚ Ð·Ð° Ð¼ÐµÑÑÑ† ÑÐ¾ÑÑ‚Ð°Ð²Ð¸Ð»Ð° " + middle + " Ñ€ÑƒÐ±Ð»ÐµÐ¹");
 
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};{
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        {
             char length = 0;
-            for (int element : reverseFullName)
-            {
+            for (int element : reverseFullName) {
                 length++;
             }
-            for (int i = length - 1; i >= 0; i--)
-            {
+            for (int i = length - 1; i >= 0; i--) {
                 System.out.print(reverseFullName[i]);
             }
 
@@ -41,8 +46,9 @@ class massive  {
             return arr;
 
 
-
-        }}}
+        }
+    }
+}
 
 
 
